@@ -1,7 +1,8 @@
-/* Reset styles */
-body {
+/* Cấu trúc cơ bản */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Header styles */
@@ -15,12 +16,15 @@ header {
   height: 150px; /* Kéo dài header */
 }
 
+/* Logo */
 .logo {
-  width: 120px; /* Kích thước logo */
-  height: 120px; /* Kích thước logo */
+  width: 300px; /* Chiều rộng của logo chữ nhật */
+  height: 80px; /* Chiều cao của logo chữ nhật */
   margin-right: 20px; /* Khoảng cách giữa logo và tên shop */
+  border-radius: 20px; /* Bo góc logo */
 }
 
+/* Tên cửa hàng */
 h1 {
   margin: 0;
   font-size: 36px; /* Tăng kích cỡ chữ tên shop */
@@ -29,72 +33,64 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* Main container */
-.container {
+/* Form nhập thông tin */
+form {
   display: flex;
-  padding: 20px;
-  gap: 20px;
   justify-content: space-between;
+  margin: 20px;
 }
 
-/* Left column for input form */
-.form-container {
-  flex: 1;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
-.form-container label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.form-container input {
-  width: 100%;
+/* Các input thông tin */
+input {
+  margin-bottom: 10px;
   padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+input[type="button"] {
+  background-color: #4CAF50;
   color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+input[type="button"]:hover {
+  background-color: #45a049;
 }
 
-/* Right column for size charts */
-.chart-container {
-  flex: 1;
-}
-
-.chart-container h3 {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.chart-container img {
+/* Bảng size */
+table {
   width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Footer styles */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
 }
