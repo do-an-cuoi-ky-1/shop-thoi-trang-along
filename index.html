@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,123 +7,119 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo-title">
-      <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t1.15752-9/467388940_3716252318684927_9112017956316814122_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=sANOSP6KhA4Q7kNvgGcsBF8&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&oh=03_Q7cD1QHanC4OFWs08uH4KICdOvDJBuBodK2kXX0Tjl9GhDDTJQ&oe=677AB56F" alt="Logo" class="logo">
-      <h1 class="shop-title">Cửa hàng thời trang nam A Long</h1>
-    </div>
+
+  <!-- Header -->
+  <header>
+    <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t1.15752-9/467388940_3716252318684927_9112017956316814122_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=sANOSP6KhA4Q7kNvgGcsBF8&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&oh=03_Q7cD1QHanC4OFWs08uH4KICdOvDJBuBodK2kXX0Tjl9GhDDTJQ&oe=677AB56F" alt="Logo" class="logo">
+    <h1>Cửa hàng thời trang nam A Long</h1>
   </header>
 
-  <main class="container">
-    <div class="form-section">
-      <h2>Nhập thông tin để tính size:</h2>
-      <form id="sizeForm">
-        <label for="height">Chiều cao (cm):</label>
+  <!-- Container for form and size charts -->
+  <div class="container">
+
+    <!-- Form container (input fields) -->
+    <div class="form-container">
+      <h2>Nhập số đo của bạn</h2>
+      <form>
+        <label for="height">Chiều cao (cm)</label>
         <input type="number" id="height" name="height" required>
 
-        <label for="weight">Cân nặng (kg):</label>
+        <label for="weight">Cân nặng (kg)</label>
         <input type="number" id="weight" name="weight" required>
 
-        <label for="waist">Vòng eo (cm):</label>
+        <label for="waist">Vòng eo (cm)</label>
         <input type="number" id="waist" name="waist" required>
 
-        <label for="shoulder">Chiều dài vai (cm):</label>
+        <label for="shoulder">Chiều dài vai (cm)</label>
         <input type="number" id="shoulder" name="shoulder" required>
 
-        <label for="legLength">Chiều dài chân (cm):</label>
-        <input type="number" id="legLength" name="legLength" required>
+        <label for="leg">Chiều dài chân (cm)</label>
+        <input type="number" id="leg" name="leg" required>
 
         <button type="submit">Tính size</button>
       </form>
     </div>
 
-    <div class="size-charts">
-      <div class="size-chart">
-        <h3>Bảng size quần:</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Kích cỡ</th>
-              <th>Vòng eo (cm)</th>
-              <th>Chiều dài chân (cm)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>S</td>
-              <td>68-72</td>
-              <td>81-82</td>
-            </tr>
-            <tr>
-              <td>M</td>
-              <td>74-78</td>
-              <td>83</td>
-            </tr>
-            <tr>
-              <td>L</td>
-              <td>82-84</td>
-              <td>84</td>
-            </tr>
-            <tr>
-              <td>XL</td>
-              <td>87+</td>
-              <td>85</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="size-chart">
-        <h3>Bảng size áo:</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Size</th>
-              <th>Dài áo (cm)</th>
-              <th>Ngực (cm)</th>
-              <th>Cân nặng (kg)</th>
-              <th>Chiều cao (cm)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>S</td>
-              <td>63-67</td>
-              <td>46-50</td>
-              <td>50-60</td>
-              <td>160-167</td>
-            </tr>
-            <tr>
-              <td>M</td>
-              <td>65-69</td>
-              <td>48-52</td>
-              <td>55-65</td>
-              <td>165-172</td>
-            </tr>
-            <tr>
-              <td>L</td>
-              <td>67-71</td>
-              <td>50-54</td>
-              <td>65-75</td>
-              <td>170-180</td>
-            </tr>
-            <tr>
-              <td>XL</td>
-              <td>69-73</td>
-              <td>52-56</td>
-              <td>75-90</td>
-              <td>175-185</td>
-            </tr>
-            <tr>
-              <td>XLL</td>
-              <td>70-75</td>
-              <td>53-57</td>
-              <td>85-100</td>
-              <td>180-190</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <!-- Size charts container -->
+    <div class="chart-container">
+      <h3>Bảng size Áo</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Vòng ngực (cm)</th>
+            <th>Chiều cao (cm)</th>
+            <th>Cân nặng (kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S</td>
+            <td>85-90</td>
+            <td>160-170</td>
+            <td>50-60</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>91-95</td>
+            <td>171-175</td>
+            <td>60-70</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>96-100</td>
+            <td>176-180</td>
+            <td>70-80</td>
+          </tr>
+          <tr>
+            <td>XL</td>
+            <td>101-105</td>
+            <td>181-185</td>
+            <td>80-90</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Bảng size Quần</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Vòng eo (cm)</th>
+            <th>Chiều cao (cm)</th>
+            <th>Cân nặng (kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S</td>
+            <td>70-75</td>
+            <td>160-170</td>
+            <td>50-60</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>76-80</td>
+            <td>171-175</td>
+            <td>60-70</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>81-85</td>
+            <td>176-180</td>
+            <td>70-80</td>
+          </tr>
+          <tr>
+            <td>XL</td>
+            <td>86-90</td>
+            <td>181-185</td>
+            <td>80-90</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </main>
+
+  </div>
+
 </body>
 </html>
