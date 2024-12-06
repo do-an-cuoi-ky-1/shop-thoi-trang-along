@@ -12,7 +12,7 @@ header {
   background-color: black;
   color: white;
   padding: 10px 20px;
-  justify-content: center; /* Căn giữa nội dung logo + tên */
+  justify-content: flex-start; /* Logo nằm bên trái tên shop */
   height: 150px; /* Kéo dài header */
 }
 
@@ -33,64 +33,71 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* Form nhập thông tin */
-form {
+/* Các phần khác giữ nguyên */
+.container {
   display: flex;
+  padding: 20px;
+  gap: 20px;
   justify-content: space-between;
-  margin: 20px;
 }
 
-/* Các input thông tin */
-input {
-  margin-bottom: 10px;
-  padding: 8px;
+.form-container {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input {
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-input[type="button"] {
-  background-color: #4CAF50;
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-input[type="button"]:hover {
-  background-color: #45a049;
+button:hover {
+  background-color: #0056b3;
 }
 
-/* Bảng size */
-table {
-  width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
+/* Right column for size charts */
+.chart-container {
+  flex: 1;
 }
 
-table, th, td {
-  border: 1px solid black;
-}
-
-th, td {
-  padding: 10px;
+.chart-container h3 {
   text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-th {
-  background-color: #f2f2f2;
-}
-
-/* Footer styles */
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
+.chart-container img {
   width: 100%;
-  bottom: 0;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
